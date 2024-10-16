@@ -13,36 +13,36 @@ def main():
 
 
     customerName= ""
-    kilometer = int(0)
+    kilometer = float(0)
     deliveryCharge = int(15)
-    recordCost = int(0)
+    recordCost = float(0)
 
 
     #Input
-    
+
     #Customer name input
 
-    customerName = input("Please enter Customer's name: ")
+    customerName = input("Enter the customer's name: ")
 
     #Kilometer distance input for order
 
-    kilometer = input("Please enter in distance using kilometers: ")
+    kilometer = input("Enter the distance in kilometers for delivery: ")
 
     #record cost input for order
 
-    recordCost = input("Enter in cost of records: ")
+    recordCost = input("Enter the cost of records purchased: ")
 
     #OutPut
 
     # Delivery Cost equation
 
-    totalDeliveryCost = deliveryCharge * int(kilometer)
+    totalDeliveryCost = deliveryCharge * float(kilometer)
 
 
 
     #Record Cost equation
 
-    totalRecordCost = int(recordCost) * 1.14  #1.14 for 14% taxes
+    totalRecordCost = float(recordCost) * 1.14  #1.14 for 14% taxes
 
 
     #Total cost equation
@@ -51,16 +51,16 @@ def main():
 
 
     #print customers names
-    print("Customers name: {0}".format(customerName))
+    print("Puchase summary for {0}".format(customerName))
 
     #Print for total delivery cost
-    print("Total delivery cost: ${0:.2f}".format(totalDeliveryCost))
+    print("Delivery Cost: ${0:.2f}".format(totalDeliveryCost))
     
     #Print for record cost including taxes
-    print("Total cost for records: ${0:.2f}".format(totalRecordCost))
+    print("Purchase Cost: ${0:.2f}".format(totalRecordCost))
 
     #Print total cost 
-    print("Total cost: ${0:.2f}".format(totalCost))
+    print("Total cost   : ${0:.2f}".format(totalCost))
 
 
 
